@@ -29,6 +29,8 @@ def main():
 	br.open("https://login.yahoo.com/config/login_verify2?&.src=ym&.intl=us")
 	br.select_form(nr=0)
 	br.form["username"] = username
+	br.submit()
+	br.select_form(nr=0)
 	br.form["passwd"] = password
 	br.submit()
 	
